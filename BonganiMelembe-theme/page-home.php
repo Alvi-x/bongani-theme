@@ -1,9 +1,4 @@
-<?php
-/**
- * The template for displaying content in the index.php template.
- */
-?>
-
+<?php get_header(); ?>
 <section class="hero-section py-5 text-center text-light" style="background-image: url(assets/herobg.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh;">
   <div class="container px-4 py-5 my-5">
     <p>Welcome to</p>
@@ -110,3 +105,5 @@
     </div>
 </section>
 
+
+<?php get_footer(); ?>
