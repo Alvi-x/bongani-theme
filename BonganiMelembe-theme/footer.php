@@ -58,9 +58,15 @@
 					</div>
 					<hr class="m-5">
 					<div>
-					<div class="col-md-6">
-						<p><span class="copyright text-primary">Kernel-Afrika </span><?php printf( esc_html__( '&copy; %1$s Copyright Reserved', 'custom-wordpress-theme-for-flint-studio-technical-assessment' ), wp_date( 'Y' ), get_bloginfo( 'name', 'display' ) ); ?></p>
-					</div>
+					<div class="row mx-5">
+						<div class="col-md-6">
+							<p><span class="copyright text-primary">Kernel-Afrika </span><?php printf( esc_html__( '&copy; %1$s Copyright Reserved', 'custom-wordpress-theme-for-flint-studio-technical-assessment' ), wp_date( 'Y' ), get_bloginfo( 'name', 'display' ) ); ?></p>
+						</div>
+						<div class="col-md-6 mb-3 text-end">
+							<a href="https://www.linkedin.com/company/your-company-link" target="_blank">
+								<i class="fab fa-linkedin fa-2x"></i>
+							</a>
+						</div>
 					</div>
 
 					<?php
