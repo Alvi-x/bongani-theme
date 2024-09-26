@@ -11,4 +11,22 @@ function bongani_enqueue_scripts() {
     wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js', array('jquery'), '', true);
 }
 add_action('wp_enqueue_scripts', 'bongani_enqueue_scripts');
+
+function create_post_type_services() {
+    register_post_type('services',
+        array(
+            'labels' => array(
+                'name' => __('Services'),
+                'singular_name' => __('Service')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+        )
+    );
+}
+add_action('init', 'create_post_type_services');
+
+
+register_nav_menus()
 ?>

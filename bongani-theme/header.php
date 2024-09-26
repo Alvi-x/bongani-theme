@@ -3,24 +3,55 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css">
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'primary',
-                    'menu_class' => 'navbar-nav ms-auto'
-                ));
-                ?>
-            </div>
-        </div>
-    </nav>
-</header>
+
+<section class="menu-area">
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item dropdown"><a href="<?php echo site_url('/services'); ?>" class="nav-link active">Services</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+        </li> 
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown"><a href="<?php echo site_url('/about-us'); ?>" class="nav-link">About us</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown"><a href="<?php echo site_url('/news-and-insights'); ?>" class="nav-link">News and Insights</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="<?php echo site_url('/contact'); ?>" class="nav-link">Contact</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+        </ul>
+    </header>
+</div>
+</section>
