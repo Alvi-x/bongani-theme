@@ -1,6 +1,15 @@
 <?php get_header(); ?>
-<div class="container text-light">
-    <h2>Newers & Insights</h2>
+<div class="container text-light text-center">
+    
+    <section class="hero-blog">
+    <h1 class="display-5 fw-semibold text-center">Newers & Insights</h1>
+    </section>
+
+    <section class="blog">
+        <h3>Blog</h3>
+        <p><img src="<?php echo get_template_directory_uri(); ?>/assets/blog.png" width="100%" alt="Kernel-Afrika-logo"></p>
+    </section>
+
     <div class="row">
         <?php
         $query = new WP_Query(array('posts_per_page' => 10));
